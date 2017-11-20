@@ -1,0 +1,40 @@
+While running
+this program will repeatedly press two keys,
+set up by the user to start and stop recording at intervals
+according to the users preferred length of individual videos.
+
+It will also attempt to delete old videos
+that together with the existing videos
+exceed the user's preferred total recording length.
+
+Be warned that version 1.0 of this program will assume
+that ALL files in the selected directory are videos of the preferred length.
+
+That means that if for instance total length/individual length = 1
+the program will, as soon as it enters the state "running",
+delete all files but the very newest.
+It also means that if there is one file in the directory
+and the user manually creates a text file in the directory,
+the program will attempt to delete the old file.
+And it means that if the preferred video length is changed at runtime,
+the program will assume that older videos are of the new preferred length.
+
+To set up hotkeys, simply click the according text field and press the hotkey.
+In version 1.0 this will not work with certain keys, usually regional characters.
+
+If an input into one of the fields is not valid,
+the field should turn red and the program should enter the error state.
+
+If an input field is cleared,
+it should turn yellow and the program should enter the waiting state.
+In version 1.0 this behaviour is not entirely consistent.
+
+When all inputs are valid, the program will enter the suspended state.
+From there it can be actually started and while running, stopped by pressing the button again.
+
+When an input is changed while the program is running,
+it will exit the running state and usually press the hotkey to stop recording.
+
+Verison 1.0 of this program is what the developer,
+Serpentyan considers the absolute minimal state,
+he would consider "working".
